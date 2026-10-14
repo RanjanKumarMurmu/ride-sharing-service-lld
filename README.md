@@ -14,12 +14,11 @@ This project simulates the core functionalities of a modern ride-sharing applica
 Based on the core system requirements, this platform supports:
 1. **Passenger Requests & Driver Fulfillment:** Allows passengers to request rides and available drivers to accept or decline them.
 2. **Location & Preference Specifications:** Passengers can specify pick-up locations, destinations, and a desired `RideType` (e.g., SUV, SEDAN, AUTO).
-3. **Driver Availability Management:** Drivers can view active nearby requests and change their operational status.
-4. **Proximity-Based Matching:** Implements proximity metrics to match ride requests with the closest available drivers.
-5. **Dynamic Fare Calculation:** Dynamically computes trip fares based on distance, time, and the chosen `RideType`.
-6. **Transaction Processing:** Handles simulated transaction workflows between passengers and drivers upon ride completion.
-7. **Real-Time Notifications & Tracking:** Employs observer mechanics to provide ride updates to active stakeholders instantly.
-8. **Concurrency & Consistency:** Architected to handle simultaneous requests and guarantee state integrity.
+3. **Proximity-Based Matching:** Implements proximity metrics to match ride requests with the closest available drivers.
+4. **Dynamic Fare Calculation:** Dynamically computes trip fares based on distance, time, and the chosen `RideType`.
+5. **Transaction Processing:** Handles simulated transaction workflows between passengers and drivers upon ride completion.
+6. **Real-Time Notifications & Tracking:** Employs observer mechanics to provide ride updates to active stakeholders instantly.
+7. **Concurrency & Consistency:** Architected to handle simultaneous requests and guarantee state integrity.
 
 ---
 
