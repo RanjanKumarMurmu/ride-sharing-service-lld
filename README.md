@@ -38,7 +38,7 @@ The lifecycle of a `Trip` is managed dynamically using the **State Pattern** thr
   * `VehicleBasedPricingStrategy`: Scales base fares and per-kilometer rates based on the `RideType` enumeration map.
 
 ### 3. Observer Pattern (Real-Time Notifications)
-The system leverages the **Observer Pattern** via the `TripObserver` interface. Objects like `Rider` and `Driver` implement this interface to listen for real-time state mutations in `Trip` subjects, trigger view updates, and log operations automatically.
+The system leverages the **Observer Pattern** via the `TripObserver` interface. Objects like `Rider` implement this interface to listen for real-time state mutations in `Trip` subjects, trigger view updates, and log operations automatically.
 
 ---
 
@@ -57,9 +57,9 @@ The structural relations captured in the design system map out as follows:
 +----------------+  +----------------+  +-----------------+
 |  Driver        |  |  User          |  |  Trip           |
 +----------------+  +----------------+  +-----------------+
-         |                   |                   |
-         +---------+---------+                   v
-                   v                     +-----------------+
+                                                 |
+                                                 v
+                                         +-----------------+
                [ Observer ]------------->|   TripState     |
                                          +-----------------+
                                                  |
